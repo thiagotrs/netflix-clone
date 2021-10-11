@@ -1,0 +1,151 @@
+:root {
+    --primary: #fff;
+    --secondary: #141414;
+}
+
+body {
+    background: var(--secondary);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    background: var(--secondary);
+    height: 68px;
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.showcase {
+    background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), url('../img/showcase.jpg') center center no-repeat;
+    background-size: cover;
+    margin-top: 68px;
+    height: calc(35vw + 68px);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.showcase .container {
+    margin: 75px auto 20px 30px;
+}
+
+.showcase h2 {
+    font-size: 30px;
+    margin: 15px 0;
+    color: var(--primary);
+}
+.showcase p {
+    font-size: 18px;
+    color: var(--primary);
+    display: none;
+}
+
+.btn {
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.70);
+}
+.btn--inverted {
+    background-color: #6d6d6eb3;
+    color: var(--primary);
+}
+.btn--inverted:hover {
+    background-color: #6d6d6e88;
+}
+
+.logo {
+    margin: 0;
+}
+.logo img{
+    height: 50px;
+}
+
+.menu {
+    margin-left: 20px;
+}
+.menu a {
+    color: var(--primary);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.menu a:hover {
+    color: #e5e5e5;
+}
+.menu a.active {
+    font-weight: bold;
+}
+
+main {
+    overflow: hidden;
+}
+
+section {
+    margin: 20px;
+}
+
+.title {
+    color: var(--primary);
+}
+
+.copyright {
+    color: #e5e5e5;
+    text-align: center;
+    margin: 70px 0 30px;
+}
+
+@media screen and (min-width: 780px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+
+    section {
+        margin: 30px;
+    }
+
+    .showcase {
+        margin-top: 0;
+        height: calc(35vw + 68px);
+    }
+
+    .showcase .container {
+        margin: 30px;
+        margin: 100px auto 20px 30px;
+    }
+    
+    .showcase h2 {
+        font-size: 40px;
+        margin: revert;
+    }
+    
+    .btn {
+        padding: 15px 20px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 979px) {
+    .showcase p {
+        display: block;
+    }
+
+    .showcase .container {
+        width: 40vw;
+    }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo"><a href="#"><img src="img/netflix-logo.png" alt="Netflix"></a></h1>
+            <div class="menu">
+                <a href="#" class="active">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Lançamentos</a>
+                <a href="#">Minha Lista</a>
+            </div>
+        </nav>
+        <div class="showcase">
+            <div class="container">
+                <h2>Blade Runner 2049</h2>
+                <p>Em Blade Runner 2049, após os problemas enfrentados com os Nexus 8, uma nova espécie de replicantes é desenvolvida, de forma que seja mais obediente aos humanos.</p>
+                <button class="btn">Assistir agora</button>
+                <button class="btn btn--inverted">Mais Informações</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2 class="title">Lançamentos</h2>
+            <div class="movies owl-carousel">
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+            </div>
+        </section>
+        <section>
+            <h2 class="title">Em Alta</h2>
+            <div class="movies owl-carousel">
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+            </div>
+        </section>
+        <section>
+            <h2 class="title">Populares no Netflix</h2>
+            <div class="movies owl-carousel">
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+                <div><a href="#"><img src="img/madmax-furyroad.jpg" alt="Mad Max Fury Road"></a></div>
+                <div><a href="#"><img src="img/alita-battle-angel.jpg" alt="Alita Battle Angel"></a></div>
+                <div><a href="#"><img src="img/blade-runner-2049.jpg" alt="Blade Runner 2049"></a></div>
+                <div><a href="#"><img src="img/intersteller.jpg" alt="Intersteller"></a></div>
+                <div><a href="#"><img src="img/annihilation.jpg" alt="Annihilation"></a></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Netflix Inc.</p>
+    </footer>
+
+    <link rel="stylesheet" href="js/owl-carousel/assets/owl.carousel.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 5,
+                nav: true,
+                responsive:{
+                    0:{
+                        items:2
+                    },
+                    780:{
+                        items:4
+                    },
+                    1180:{
+                        items:6
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
